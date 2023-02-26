@@ -1,0 +1,11 @@
+.btn {
+  width: 107px;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+.btn span {
+  font-weight: 700;
+}
