@@ -16,7 +16,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 
 // 이미지
-import dumy from "public/card_dumy.jpg";
+import dumy from "../../public/card_dumy.jpg";
 import google from "public/Google.png";
 import pinterest from "public/Pinterest.png";
 import twitch from "public/Twitch.png";
