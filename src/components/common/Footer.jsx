@@ -1,12 +1,12 @@
 import React from "react";
 import styles from "@/styles/layout/footer.module.css";
 import Image from "next/image";
-import logo from "public/footer_logo.png";
-import facebook from "public/sns/Facebook.png";
-import Instagram from "public/sns/Instagram.png";
-import LinkedIn from "public/sns/LinkedIn.png";
-import twitter from "public/sns/Twitter.png";
-import youTube from "public/sns/YouTube.png";
+// import logo from "public/footer_logo.png";
+// import facebook from "public/sns/Facebook.png";
+// import Instagram from "public/sns/Instagram.png";
+// import LinkedIn from "public/sns/LinkedIn.png";
+// import twitter from "public/sns/Twitter.png";
+// import youTube from "public/sns/YouTube.png";
 import Link from "next/link";
 
 function Footer(props) {
@@ -16,7 +16,7 @@ function Footer(props) {
         <div className={styles.footer_wrap}>
           <div className={styles.left}>
             <div className={styles.footerLogo}>
-              <Image src={logo} alt={logo}></Image>
+              <Image src="/footer_logo.png" alt="footer_logo" fill></Image>
             </div>
             <div className={styles.copyright}>
               <p>
@@ -104,7 +104,11 @@ function Footer(props) {
                 <li>
                   <Link href="">
                     <div className={styles.sns_img}>
-                      <Image src={facebook} alt="facebook"></Image>
+                      <Image
+                        src="/sns/Facebook.png"
+                        alt="facebook"
+                        fill
+                      ></Image>
                     </div>
                     <span>Facebook</span>
                   </Link>
@@ -112,7 +116,11 @@ function Footer(props) {
                 <li>
                   <Link href="">
                     <div className={styles.sns_img}>
-                      <Image src={Instagram} alt="Instagram"></Image>
+                      <Image
+                        src="/sns/Instagram.png"
+                        fill
+                        alt="Instagram"
+                      ></Image>
                     </div>
                     <span>Instagram</span>
                   </Link>
@@ -120,7 +128,11 @@ function Footer(props) {
                 <li>
                   <Link href="">
                     <div className={styles.sns_img}>
-                      <Image src={LinkedIn} alt="LinkedIn"></Image>
+                      <Image
+                        src="/sns/LinkedIn.png"
+                        alt="LinkedIn"
+                        fill
+                      ></Image>
                     </div>
                     <span>LinkedIn</span>
                   </Link>
@@ -128,7 +140,7 @@ function Footer(props) {
                 <li>
                   <Link href="">
                     <div className={styles.sns_img}>
-                      <Image src={twitter} alt="twitch"></Image>
+                      <Image src="/sns/Twitter.png" alt="twitch" fill></Image>
                     </div>
                     <span>Twitter</span>
                   </Link>
@@ -137,7 +149,7 @@ function Footer(props) {
                 <li>
                   <Link href="">
                     <div className={styles.sns_img}>
-                      <Image src={youTube} alt="youTube"></Image>
+                      <Image src="/sns/YouTube.png" alt="youTube" fill></Image>
                     </div>
                     <span>YouTube</span>
                   </Link>

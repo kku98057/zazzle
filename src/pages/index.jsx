@@ -15,14 +15,6 @@ import { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 
-// 이미지
-import dumy from "../../public/card_dumy.jpg";
-import google from "public/Google.png";
-import pinterest from "public/Pinterest.png";
-import twitch from "public/Twitch.png";
-import youtube from "public/YouTube.png";
-import facebook from "public/Facebook.png";
-
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -175,7 +167,7 @@ export default function Home() {
           </p>
         </Title>
         <Flex gap="30px">
-          <Card src={dumy}>
+          <Card src="/card_dumy.jpg">
             <p>
               “Lorem ipsum dolor sit ametolil col consectetur adipiscing lectus
               a nunc mauris scelerisque sed egestas.”
@@ -183,7 +175,7 @@ export default function Home() {
             <h4>John Carter</h4>
             <span>Head of Marketing at Facebook</span>
           </Card>
-          <Card src={dumy}>
+          <Card src="/card_dumy.jpg">
             <p>
               “Ultrices eros in cursus turpis massa tincidunt sem nulla pharetra
               diam sit amet nisl suscipit adipis.”
@@ -191,7 +183,7 @@ export default function Home() {
             <h4>John Carter</h4>
             <span>Head of Marketing at Facebook</span>
           </Card>
-          <Card src={dumy}>
+          <Card src="/card_dumy.jpg">
             <p>
               “Convallis posuere morbi leo urna molestie at elementum eu
               facilisis sapien pellentesque habitant.”
@@ -242,7 +234,7 @@ export default function Home() {
       </Section>
       <Section>
         <Flex horizen>
-          <Card2 src={dumy}>
+          <Card2 src="/card_dumy.jpg">
             <div className={styles.card2_title}>
               <h4>John Carter</h4>
               <p>
@@ -267,7 +259,7 @@ export default function Home() {
               </div>
             </div>
           </Card2>
-          <Card2 src={dumy} reverse>
+          <Card2 src="/card_dumy.jpg" reverse>
             <div className={styles.card2_title}>
               <h4>John Carter</h4>
               <p>
@@ -424,34 +416,34 @@ export default function Home() {
             }}
           >
             <SwiperSlide className={styles.customSlide}>
-              <Image src={google} alt={google}></Image>
+              <Image fill src="/Google.png" alt="google"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={pinterest} alt={pinterest}></Image>
+              <Image fill src="/Pinterest.png" alt="pinterest"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={twitch} alt={twitch}></Image>
+              <Image fill src="/Twitch.png" alt="twitch"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={youtube} alt={youtube}></Image>
+              <Image fill src="/YouTube.png" alt="youtube"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={facebook} alt={facebook}></Image>
+              <Image fill src="/Facebook.png" alt="facebook"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={google} alt={google}></Image>
+              <Image fill src="/Google.png" alt="google"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={pinterest} alt={pinterest}></Image>
+              <Image fill src="/Pinterest.png" alt="pinterest"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={twitch} alt={twitch}></Image>
+              <Image fill src="/Twitch.png" alt="twitch"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={youtube} alt={youtube}></Image>
+              <Image fill src="/YouTube.png" alt="youtube"></Image>
             </SwiperSlide>
             <SwiperSlide className={styles.customSlide}>
-              <Image src={facebook} alt={facebook}></Image>
+              <Image fill src="/Facebook.png" alt="facebook"></Image>
             </SwiperSlide>
           </Swiper>
           <div ref={prev} className={styles.prev}>

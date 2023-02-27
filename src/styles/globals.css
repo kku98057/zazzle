@@ -26,6 +26,7 @@ a {
 }
 img {
   width: 100%;
+  position: relative !important;
   display: block;
 }
 button {

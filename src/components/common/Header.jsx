@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "../../styles/layout/header.module.css";
-import logo from "public/header/logo.png";
+
 import Image from "next/image";
 import { RxCaretRight } from "react-icons/rx";
 import Button1 from "../buttons/Button1";
@@ -13,7 +13,7 @@ function Header(props) {
         <div className={styles.inHeader}>
           <div className={styles.logo}>
             <Link href="/">
-              <Image src={logo} alt={`zazzle_${logo}`}></Image>
+              <Image src="/header/logo.png" alt={`zazzle_log`} fill></Image>
             </Link>
           </div>
           <nav className={styles.nav}>

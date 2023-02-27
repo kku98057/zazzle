@@ -6,7 +6,7 @@ function Card({ children, src }) {
   return (
     <div className={styles.card}>
       <div className={styles.card_img}>
-        <Image src={src} alt={src}></Image>
+        <Image src={src} alt={src} fill></Image>
       </div>
       <div className={styles.card_text}>{children}</div>
     </div>

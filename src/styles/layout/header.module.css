@@ -15,7 +15,9 @@
 }
 .logo {
   width: 120px;
+  position: relative;
 }
+
 .nav {
   height: 100%;
   display: flex;

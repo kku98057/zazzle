@@ -162,7 +162,7 @@
   gap: 90px;
   cursor: pointer;
   align-items: center;
-  /* transition: all 0.3s; */
+  transition: all 0.3s;
 }
 .question h5 {
   font-size: var(--font-middle2);
@@ -174,6 +174,7 @@
   overflow: hidden;
   margin-top: 16px;
   display: flex;
+  transition: all 0.3s;
 }
 .answer p {
   font-size: var(--small);
@@ -181,7 +182,7 @@
   color: var(--color-contents-subtext);
 }
 .ask.active .answer {
-  height: auto;
+  height: 48px;
 }
 .ask.active {
   background-color: #f2f1fa;
@@ -202,16 +203,18 @@
   width: 32px;
   height: 32px;
   transform: rotate(45deg);
+  transition: all 0.3s;
 }
 .askBtns_icon {
   font-size: 20px;
+  transition: all 0.3s;
 }
 .askBtns_icon path {
   stroke: var(--color-card-subText);
 }
 .ask.active .askBtn button {
   background-color: var(--color-contents-title);
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 .ask.active .askBtns_icon path {
   stroke: #ffff;
