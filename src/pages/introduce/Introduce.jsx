@@ -1,11 +1,10 @@
-import Head from "next/head";
+import Layout from "@/components/layout/Layout";
 
-function Introduce(props) {
-  Introduce.title = "Introduce";
+function Introduce() {
   return (
-    <>
+    <Layout metaTitle="jazzle - 회사소개">
       <main>adsfasdfasd</main>
-    </>
+    </Layout>
   );
 }
 
